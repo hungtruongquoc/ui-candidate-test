@@ -53,16 +53,18 @@ Array.prototype.unique = function() {
      // For numbers which are multiples of both three and five print "FizzBuzz".
      function doFizzBuzz() {
          // FILL THIS IN
+          var result;
           for (var i = 1; i < 101; i++){
                if(i%3 === 0 && i%5 === 0){
-                    if (window.console) console.log("FizzBuzz");
+                    result = "FizzBuzz";
                }else if(i % 5 === 0){
-                    if (window.console) console.log("Buzz");
+                    result = "Buzz";
                }else if(i % 3 === 0){
-                    if (window.console) console.log("Fizz");
+                    result = "Fizz";
                }else{
-                    if (window.console) console.log(i);
+                    result = i;
                }
+               if (window.console) console.log(result);
           }
           return 1;
      }
